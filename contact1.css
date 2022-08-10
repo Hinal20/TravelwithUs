@@ -1,0 +1,181 @@
+body, html {
+	height: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+ iframe {
+	border: none !important;
+} 
+
+.content {
+  width: auto;  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  height: auto;
+  margin:30px;
+}
+.main{
+  text-align: center;
+}
+.content1 {
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+   background: rgba(255, 255, 255, 0.221); 
+ backface-visibility: hidden;
+  
+}
+
+.content2 {
+  width: 500px;
+  background: rgba(255, 34, 0, 0.68);
+  /* background: linear-gradient(45deg,rgba(255, 38, 0, 0.021)); */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.contact3-form {
+ 
+  padding: 20px;
+}
+
+.contactform1e {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+   /* color: rgba(255, 255, 255, 0.957);  */
+   color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrap-input3 {
+  width: 100%;
+  position: relative;
+  /* border-bottom: 2px solid rgba(255,255,255,0.24); */
+  margin-bottom: 27px;
+}
+
+.input3 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+   color: #fff; 
+  line-height: 1.2;
+  padding: 0 5px;
+}
+
+.focus-input3 {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  
+}
+
+ .focus-input3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+} 
+
+input.input3 {
+  height: 45px;
+}
+
+
+textarea.input3 {
+  min-height: 115px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  
+}
+
+.content1-btn {
+  padding-top: 2px;
+}
+
+.subbut {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+ background-color: #fff;
+}
+
+.subbut::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  width: 100%;
+  opacity: 1;
+  
+}
+
+.subbut:hover {
+  color:red;
+}
+#subbut {
+  
+  transition: transform ease-in-out 0.3s;
+}
+#subbut:hover { transform: scale(1.2); }
+
+::placeholder { 
+  color: white
+  }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .content2 {
+    padding: 72px 15px 65px 15px;
+  }
+
+}

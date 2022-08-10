@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>Booking Page</title>
+        <link rel="stylesheet" href="book.css" />
+        <link rel="stylesheet" href="headerFooter.css" />
+    </head>
+
+    <body>  
+        <div class="header">
+            <!--Start of header div-->
+            <header>
+                <a href="index.html">TravelsWithUs</a>
+            </header>
+        </div>
+        <!--End of header div-->
+
+        <div class="container">
+            <div class="navbar">
+                <!--Start of navbar div-->
+                <nav>
+                    <a href="#" class="toggel">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navItems">
+                        <ul id="navItems">
+                            <li><a href="index.html" target="_blank">Home</a></li>
+                            <li><a href="specialevents.html" target="_blank">Special Event</a></li>
+                            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <ul id="bookings">
+                        <li><a href="book.html" target="_blank">Book</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--End of navbar div-->
+        </div>
+        <!-- Main Body -->
+
+        <div class="main">
+            <h2>Get Your Package Here!</h2>
+            <form method="get" action="#" name="form1" id="form1">
+                <div class="row1">
+                    <!-- <legend>Booking form</legend>  -->
+                    <label>Name:</label>
+                    <input type="text" name="fname" id="fname"/>
+                    <span id="span1"> * </span>
+                    <br>
+                    <label> Destination:</label>
+                    <select name="destination" id="destination">
+                        <option value=" ">Select</option>
+                        <option value="10">Toronto </option>
+                        <option value="20">India</option>
+                        <option value="30">Egypt</option>
+                        <option value="40">France</option>
+                        <option value="50">United States</option>
+                        <option value="60">Germany</option>
+                        <option value="70">Europe</option>
+                        <option value="80">Brazil</option>
+                        <option value="90">Louisiana</option>
+                        <option value="100">Mexico</option>
+                        <option value="101">Netherland</option>
+
+
+                    </select>
+
+                    <br>
+                    <label> Meal</label>
+                    <input name="mealplan" type="radio" id="mealplan" value="0" />
+                    <label>Vegetarian</label>
+                    <input name="mealplan" type="radio" id="adults-only" />
+                    <label>Non vegetarian</label>
+                </div>
+                <div class="second_raw">
+                    <label for="time">Days</label>
+                    <select name="time" id="time">
+                        <option value="0">Select Duration</option>
+                        <option value="1">2-6 Days</option>
+                        <option value="2" selected="">7-8 Days</option>
+                        <option value="3">9-13 Days</option>
+                        <option value="4">14+ Days</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    <label for="Fromwhen">From </label>
+                    <input type="date" id="Fromwhen" />
+                    <br>
+
+                    <label for="Towhen">To </label>
+                    <input type="date" id="Towhen" />
+                </div>
+                <div class="kids">
+                    <label for="children">kids (0-17)</label>
+                    <select name="children" id="children">
+                        <option value="0">select</option>
+                        <option value="10">0 Child</option>
+                        <option value="20">1 Child</option>
+                        <option value="30">2 Children</option>
+                        <option value="40">3 Children</option>
+                        <option value="50">4 Children</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label for="Adults">Adults:</label>
+                    <input type="name" name="numberofadults" id="Adults" />
+                    <span id="span2">*</span>
+                    <br />
+                    <label for="budget">Budget:</label>
+                    <input type="number" id="budget" min="1" max="10000" step="1" name="numberofbudget" />
+                </div>
+                <div class="button1">
+                    <button type="button" class="button-style-proceed" id="button">
+                        Book
+                    </button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+            <h1>Desirable Destination</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="CNT.jpg" alt="image" id="zoomA" onclick="image()" />
+                    <h4>CN Tower</h4>
+                    <p>
+                        The CN Tower is a 553.3 m-high concrete communications and observation tower in downtown Toronto, Ontario, Canada. Built on the former Railway Lands, it was completed in 1976. Its name "CN" referred to Canadian
+                        National, the railway company that built the tower.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <img src="aqua.jpg" alt="image" id="zoomA" onclick="image1()" />
+                    <h4>Ripley's Aquarium</h4>
+                    <p>
+                        Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned-and-operated by Ripley Entertainment. It is located in downtown Toronto, just southeast of
+                        the CN Tower. The aquarium has 5.7 million litres (1.25 million gallons) of marine and freshwater habitats from across the world.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <img src="cent.jpg" alt="image" id="zoomA" onclick="image2()" />
+                    <h4>Centre Island</h4>
+                    <p>
+                        Centre Island is also home to the Island Public and Natural Science school that goes up to grade six. Its students either live on the Island or in apartments and condos along the waterfront. They come to school each
+                        morning on the ferry!There is also a water treatment facilty, facility on Centre along with Artscape's Gibraltar Point Centre for the Arts, an artist's retreat with studio rentals.
+                    </p>
+                </div>
+                <div class="column">
+                    <img src="Niagara.jpg" alt="image" id="zoomA" onclick="image3()" />
+                    <h4>Niagra Falls</h4>
+                    <p>
+                        Niagara Falls is a city in Ontario, Canada. It is on the western bank of the Niagara River in the Golden Horseshoe region of Southern Ontario, with a population of 88,071 at the 2016 census. It is part of the St.
+                        Catharines - Niagara Census Metropolitan Area (CMA). Incorporated on 12 June 1903, the city is across the river from Niagara Falls, New York. The Niagara River flows over Niagara Falls at this location, creating a
+                        natural spectacle which attracts millions of tourists each year.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <img src="unity.jpg" alt="image" id="zoomA" onclick="image4()" />
+                    <h4>Statue Of Unity</h4>
+                    <p>
+                        The Statue of Unity is the world's tallest statue, with a height of 182 metres (597 feet),[3] located in the state of Gujarat, India. It depicts Indian statesman and independence activist Vallabhbhai Patel
+                        (1875–1950), who was the first deputy prime minister and home minister of independent India and an adherent of Mahatma Gandhi. Patel was highly respected for his leadership in uniting 562 princely states of India to
+                        form the single Union of India.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <img src="etower.webp" alt="image" id="zoomA" onclick="image5()" />
+                    <h4>Effiel Tower</h4>
+                    <p>
+                        The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Locally nicknamed "La dame de fer"
+                        (French for "Iron Lady"), it was constructed from 1887 to 1889 as the centerpiece of the 1889 World's Fair and was initially criticised by some of France's leading artists and intellectuals for its design, but it has
+                        become a global cultural icon of France and one of the most recognisable structures in the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+         <!--Footer start-->
+
+        <footer>
+
+             <div class="mainmenu">
+                <ul class="column3">
+                    <li>Main Menu</li>
+                </ul>
+                <br />
+                <ul class="column1">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="specialevents.html" target="_blank">specila Event</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="copy">
+                <p>&copy; TravelsWithUs 2022</p>
+            </div>
+        </footer>
+
+        <!-- Java Script -->
+        <script src="toggle.js"></script>
+        <script src="images.js"></script>
+        <script src="book1.js"></script>
+
+    </body>
+</html>
